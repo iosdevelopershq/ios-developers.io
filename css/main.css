@@ -1,0 +1,102 @@
+/* Global Reset
+-------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML Attributes
+-------------------------------------------------- */
+body {
+    background-color: #FFFFFF;
+    color: #555555;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 100;
+    margin: 32px 0;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+    line-height: 150%;
+    margin: 0;
+}
+
+/* Header
+-------------------------------------------------- */
+#header {
+    background-color: #0069D8;
+    color: #FFFFFF;
+    padding: 64px 0;
+    text-align: center;
+}
+
+#header img {
+    height: 64px;
+    width: 64px;
+}
+
+/* Container
+-------------------------------------------------- */
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+/* Main Content
+-------------------------------------------------- */
+#invite-request-form {
+    padding: 64px 32px;
+    text-align: center;
+}
+
+.invite-request-form {
+    padding: 32px 0 0 0;
+}
+
+#invite-request-form .input-field {
+    border: 2px solid #0069D8;
+    border-radius: 8px;
+    color: #0069D8;
+    font-size: 16px;
+    margin: 0 16px 0 0;
+    outline: none;
+    padding: 16px;
+    width: 300px;
+}
+
+#invite-request-form .button {
+    background-color: #0069D8;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px;
+}
+
+#invite-request-form .button:hover {
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+#footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Misc.
+-------------------------------------------------- */
+.clear {
+    clear: both;
+}
