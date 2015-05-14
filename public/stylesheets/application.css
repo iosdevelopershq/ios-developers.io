@@ -7,54 +7,126 @@
 
 /* HTML Attributes
 -------------------------------------------------- */
+a {
+    color: rgba(0, 105, 216, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     background-color: #FFFFFF;
-    color: #555555;
+    color: rgba(0, 0, 0, 0.375);
     font-family: "Helvetica Neue", sans-serif;
     font-size: 16px;
-    font-weight: 300;
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 100;
-    margin: 32px 0;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 24px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgba(0, 0, 0, 1);
     font-weight: 300;
-    margin: 0;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 p {
     line-height: 150%;
-    margin: 0;
+    margin: 0 0 16px 0;
+}
+
+p.lead {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
 }
 
 /* Header
 -------------------------------------------------- */
 #header {
-    background-color: #0069D8;
-    color: #FFFFFF;
+    /*background-color: #0069D8;*/
+    /*color: #FFFFFF;*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 44px;
+    line-height: 44px;
+}
+
+#header img {
+    display: block;
+    float: left;
+    height: 22px;
+    margin: 11px 16px 11px 0;
+    width: 22px;
+}
+
+#header ul {
+    float: right;
+    list-style: none;
+}
+
+#header ul li {
+    display: inline-block;
+    margin-left: 16px;
+}
+
+#header a {
+    display: block;
+}
+
+#header a:hover {
+    color: rgba(0, 105, 216, 0.5);
+    text-decoration: none;
+}
+
+#header a.no-hover {
+    color: rgba(0, 105, 216, 1);
+}
+
+/* Hero
+-------------------------------------------------- */
+#hero {
+    background-color: rgba(0, 105, 216, 1);
+}
+
+#hero h1 {
+    color: rgba(255, 255, 255, 1);
     padding: 64px 0;
     text-align: center;
 }
 
-#header img {
-    height: 64px;
-    width: 64px;
-}
-
-/* Container
+/* The Team
 -------------------------------------------------- */
-.container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+#the-team {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 64px;
+    padding-top: 64px;
+    text-align: center;
 }
 
-/* Main Content
+#the-team h2 {
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+
+#the-team .row-that-isnt-bottom {
+    padding-bottom: 32px;
+}
+
+/* Invite Request Form
 -------------------------------------------------- */
 #invite-request-form {
     padding: 64px 32px;
@@ -95,8 +167,72 @@ p {
     text-align: center;
 }
 
+/* Content
+-------------------------------------------------- */
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+.columns-two .column-l {
+    margin-right: 10%;
+}
+
+.columns-two .column-l,
+.columns-two .column-r {
+    width: 45%;
+}
+
+.column-l,
+.column-m,
+.column-r {
+    width: 30%;
+}
+
+.column-l,
+.column-m {
+    float: left;
+}
+
+.column-m {
+    margin: 0 5%;
+}
+
+.column-r {
+    float: right;
+}
+
 /* Misc.
 -------------------------------------------------- */
 .clear {
     clear: both;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 32px auto;
+    width: 128px;
+}
+
+.founder {
+    margin: 0 auto;
+    position: relative;
+    width: 128px;
+}
+
+.founder .tag {
+    background-color: #0069D8;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    height: 24px;
+    line-height: 24px;
+    margin: -48px 32px 0 32px;
+    position: absolute;
+    width: 64px;
 }
