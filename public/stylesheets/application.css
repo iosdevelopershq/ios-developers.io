@@ -192,6 +192,11 @@ p.lead {
     width: 928px;
 }
 
+.columns-one .column-m {
+    float: none;
+    margin: 0 auto;
+}
+
 .columns-two .column-l {
     margin-right: 10%;
 }
