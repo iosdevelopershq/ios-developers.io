@@ -172,6 +172,10 @@ ul li {
     padding: 64px 0;
 }
 
+#invite-request-form img {
+    width: 100%;
+}
+
 .invite-request-form {
     padding: 32px 0 0 0;
 }
@@ -191,7 +195,7 @@ ul li {
     margin: 0 16px 0 0;
     outline: none;
     padding: 16px;
-    width: 300px;
+    width: 60%;
 }
 
 #invite-request-form .btn {
@@ -211,11 +215,6 @@ ul li {
 
 /* Endorsed By
 -------------------------------------------------- */
-#endorsed-by {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 64px 0;
-}
-
 #endorsed-by img {
     width: 100%;
 }
@@ -245,6 +244,8 @@ ul li {
     width: 928px;
 }
 
+/* Columns
+-------------------------------------------------- */
 .columns-one .column-l {
     float: none;
 }
@@ -297,6 +298,11 @@ ul li {
 
 .clear {
     clear: both;
+}
+
+.endorsement-pledge {
+    font-size: 10px;
+    margin-top: 32px;
 }
 
 .founder {
@@ -441,6 +447,19 @@ ul li {
         text-align: left;
     }
 
+    #invite-request-form .column-l,
+    #invite-request-form .column-r {
+        width: 100%;
+    }
+
+    #invite-request-form .column-r {
+        margin-top: 32px;
+    }
+
+    #invite-request-form .column-r img {
+        width: 50%;
+    }
+
     #invite-request-form .invite-request-form {
         padding: 16px 0 0 0;
     }
@@ -456,7 +475,7 @@ ul li {
         width: 100%;
     }
 
-    #invite-request-form .button {
+    #invite-request-form .btn {
         background-color: #0069d8;
         border: 2px solid rgba(0, 0, 0, 0.1);
         border-radius: 8px;
