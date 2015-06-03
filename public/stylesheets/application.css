@@ -1,14 +1,35 @@
 /* Global Reset
 -------------------------------------------------- */
-* {
+/* {
     margin: 0;
     padding: 0;
+}*/
+
+/* Global Reset
+-------------------------------------------------- */
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote,
+big, body, canvas, caption, center, cite, code, dd, del, details,
+dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer,
+form, h1, h2, h3, h4, h5, h6,header, hgroup,  html,
+i, iframe, img, ins, kbd, label, legend, li, mark, menu,
+nav, object, ol, output, p, pre, span, q, ruby, s,
+samp, section, small, strike, strong, sub, summary, sup, table, tbody,
+td, tfoot, th, thead, time, tr, tt, var, u, ul,
+video {
+    border: 0;
+    border-box: box-sizing;
+    font: inherit;
+    font-size: 100%;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
 /* HTML Attributes
 -------------------------------------------------- */
 a {
-    color: rgba(0, 105, 216, 1);
+    color: #0069d8;
     text-decoration: none;
 }
 
@@ -17,8 +38,8 @@ a:hover {
 }
 
 body {
-    background-color: #FFFFFF;
-    color: rgba(0, 0, 0, 0.375);
+    background-color: #fff;
+    color: #999;
     font-family: "Helvetica Neue", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -31,19 +52,26 @@ h1 {
 
 h2 {
     font-size: 24px;
+    margin: 0 0 32px 0;
 }
 
 h2,
 h3,
 h4,
-h5,
 h6 {
-    color: rgba(0, 0, 0, 1);
+    color: #555;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 20px;
+    margin: 32px 0;
+}
+
+h5 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 input {
@@ -59,6 +87,14 @@ p {
 p.lead {
     color: rgba(0, 0, 0, 0.5);
     font-size: 24px;
+}
+
+ul {
+    margin: 0 0 32px 18px;
+}
+
+ul li {
+    margin-bottom: 8px;
 }
 
 /* Header
@@ -80,15 +116,17 @@ p.lead {
 #header ul {
     float: right;
     list-style: none;
+    margin: 0;
 }
 
 #header ul li {
     display: inline-block;
-    margin-left: 16px;
+    margin: 0 0 0 16px;
 }
 
 #header a {
     display: block;
+    line-height: 44px;
 }
 
 #header a:hover {
@@ -97,33 +135,30 @@ p.lead {
 }
 
 #header a.no-hover {
-    color: rgba(0, 105, 216, 1);
+    color: #0069d8;
 }
 
 /* Hero
 -------------------------------------------------- */
 #hero {
-    background-color: rgba(0, 105, 216, 1);
+    background-color: #0069d8;
 }
 
 #hero h1 {
     color: rgba(255, 255, 255, 1);
     padding: 64px 0;
-    text-align: center;
 }
 
 /* The Team
 -------------------------------------------------- */
 #the-team {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 64px;
-    padding-top: 64px;
+    padding: 64px 0;
     text-align: center;
 }
 
-#the-team h2 {
-    margin-bottom: 64px;
-    margin-top: 64px;
+#the-team h3 {
+    margin: 32px 0 0 0;
 }
 
 #the-team .row-that-isnt-bottom {
@@ -133,8 +168,8 @@ p.lead {
 /* Invite Request Form
 -------------------------------------------------- */
 #invite-request-form {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 64px 0;
-    text-align: center;
 }
 
 .invite-request-form {
@@ -142,16 +177,16 @@ p.lead {
 }
 
 #invite-request-form .input-field,
-#invite-request-form .button {
+#invite-request-form .btn {
     box-sizing: border-box;
     font-size: 16px;
 }
 
 #invite-request-form .input-field {
-    border: 2px solid #0069D8;
+    border: 2px solid #0069d8;
     border-radius: 8px;
     box-sizing: border-box;
-    color: #0069D8;
+    color: #0069d8;
     font-size: 16px;
     margin: 0 16px 0 0;
     outline: none;
@@ -159,29 +194,47 @@ p.lead {
     width: 300px;
 }
 
-#invite-request-form .button {
-    background-color: #0069D8;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+#invite-request-form .btn {
+    background-color: #0069d8;
+    border: 2px solid #0069d8;
     border-radius: 8px;
-    color: #FFFFFF;
+    color: #fff;
     cursor: pointer;
     font-size: 16px;
     padding: 16px;
 }
 
-#invite-request-form .button:hover {
-    border-color: rgba(0, 0, 0, 0.25);
+#invite-request-form .btn:hover {
+    background-color: #005ec1;
+    border: 2px solid #005ec1;
+}
+
+/* Endorsed By
+-------------------------------------------------- */
+#endorsed-by {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 64px 0;
+}
+
+#endorsed-by img {
+    width: 100%;
+}
+
+#endorsed-by p {
+    font-size: 12px;
+    margin: 32px 0 0 0;
 }
 
 /* Footer
 -------------------------------------------------- */
 #footer {
     font-size: 12px;
+    padding: 64px 0;
     text-align: center;
 }
 
 #footer p {
-    margin-bottom: 64px;
+    margin-bottom: 0;
 }
 
 /* Content
@@ -192,9 +245,8 @@ p.lead {
     width: 928px;
 }
 
-.columns-one .column-m {
+.columns-one .column-l {
     float: none;
-    margin: 0 auto;
 }
 
 .columns-two .column-l {
@@ -227,15 +279,24 @@ p.lead {
 
 /* Misc.
 -------------------------------------------------- */
-.clear {
-    clear: both;
+.button {
+    background-color: #0069d8;
+    border-radius: 8px;
+    color: #fff;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    width: 25%;
 }
 
-.profile-picture {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 32px auto;
-    width: 128px;
+.button:hover {
+    background-color: #005ec1;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
 }
 
 .founder {
@@ -245,8 +306,8 @@ p.lead {
 }
 
 .founder .tag {
-    background-color: #0069D8;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: #0069d8;
+    border: 1px solid #005ec1;
     border-radius: 12px;
     box-sizing: border-box;
     color: white;
@@ -257,6 +318,70 @@ p.lead {
     margin: -48px 32px 0 32px;
     position: absolute;
     width: 64px;
+}
+
+.margin-bottom-32 {
+    margin-bottom: 32px;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 32px auto;
+    width: 128px;
+}
+
+/* Sections
+-------------------------------------------------- */
+.section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 64px 0;
+}
+
+.single-p p {
+    margin: 0;
+}
+
+.section.alt {
+    background: rgba(0, 0, 0, 0.025);
+}
+
+/* Learn
+-------------------------------------------------- */
+
+#learn .learn-beginner .container {
+    border-left: 5px solid #72d800;
+}
+
+#learn .learn-beginner .container h5 {
+    color: #72d800;
+    margin-bottom: 16px;
+}
+
+#learn .container ul li.bottom {
+    margin-bottom: 0;
+}
+
+#learn .learn-intermediate .container {
+    border-left: 5px solid #d8a200;
+}
+
+#learn .learn-intermediate .container h5 {
+    color: #d8a200;
+    margin-bottom: 16px;
+}
+
+#learn .learn-advanced .container {
+    border-left: 5px solid #d80000;
+}
+
+#learn .learn-advanced .container h5 {
+    color: #d80000;
+    margin-bottom: 16px;
 }
 
 /* iPhone 2G -> iPhone 6 (Display Zoom)
@@ -332,10 +457,10 @@ p.lead {
     }
 
     #invite-request-form .button {
-        background-color: #0069D8;
+        background-color: #0069d8;
         border: 2px solid rgba(0, 0, 0, 0.1);
         border-radius: 8px;
-        color: #FFFFFF;
+        color: #fff;
         cursor: pointer;
         font-size: 16px;
         margin: 16px 0 0 0;
