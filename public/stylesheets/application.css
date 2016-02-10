@@ -356,40 +356,6 @@ ul li {
     background: rgba(0, 0, 0, 0.025);
 }
 
-/* Learn
--------------------------------------------------- */
-
-#learn .learn-beginner .container {
-    border-left: 5px solid #72d800;
-}
-
-#learn .learn-beginner .container h5 {
-    color: #72d800;
-    margin-bottom: 16px;
-}
-
-#learn .container ul li.bottom {
-    margin-bottom: 0;
-}
-
-#learn .learn-intermediate .container {
-    border-left: 5px solid #d8a200;
-}
-
-#learn .learn-intermediate .container h5 {
-    color: #d8a200;
-    margin-bottom: 16px;
-}
-
-#learn .learn-advanced .container {
-    border-left: 5px solid #d80000;
-}
-
-#learn .learn-advanced .container h5 {
-    color: #d80000;
-    margin-bottom: 16px;
-}
-
 /* iPhone 2G -> iPhone 6 (Display Zoom)
 -------------------------------------------------- */
 @media (min-width: 320px) and (max-width: 568px) {
@@ -485,7 +451,7 @@ ul li {
         margin: 16px 0 0 0;
         width: 47.5%;
     }
-    
+
     /* Container
     -------------------------------------------------- */
     .container {
