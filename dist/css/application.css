@@ -58,14 +58,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
-button {
-  font-size: 13px;
-  text-transform: uppercase; }
-
-button, input {
-  font-weight: 300;
-  padding: 10px 15px; }
-
 h1 {
   color: #4A4A4A;
   font-size: 2em;
@@ -76,7 +68,8 @@ input {
   border-radius: 3px;
   color: #4A4A4A;
   font-size: 16px;
-  margin-bottom: 0.75em; }
+  margin-bottom: 0.75em;
+  padding: 10px 15px; }
 
 nav {
   background: white;
@@ -86,6 +79,13 @@ nav {
   padding-left: 4em;
   padding-right: 4em; }
 
+.button {
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out; }
+
 .button-bordered {
   background-color: white;
   border: solid 1px #0069D8;
@@ -93,11 +93,6 @@ nav {
   .button-bordered:hover {
     color: white !important;
     background-color: #0069D8; }
-
-.button {
-  border-radius: 3px;
-  padding: 10px 20px;
-  transition: all 0.2s ease-in-out; }
 
 .button.button-solid {
   background-color: #0069D8;
@@ -151,3 +146,5 @@ nav {
   #hero input {
     margin-right: 1em;
     width: 20%; }
+  #hero .button {
+    height: 40px; }

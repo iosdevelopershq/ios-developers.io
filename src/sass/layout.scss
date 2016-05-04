@@ -6,6 +6,14 @@ $hover-transition: all 0.2s ease-in-out;
   padding-right: 4em;
 }
 
+.button {
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: $hover-transition;
+}
+
 .button-bordered {
   background-color: white;
   border: solid 1px $blue;
@@ -15,12 +23,6 @@ $hover-transition: all 0.2s ease-in-out;
     color: white !important;
     background-color: $blue;
   }
-}
-
-.button {
-  border-radius: 3px;
-  padding: 10px 20px;
-  transition: $hover-transition;
 }
 
 .button.button-solid {
@@ -98,5 +100,9 @@ $hover-transition: all 0.2s ease-in-out;
   input {
     margin-right: 1em;
     width: 20%;
+  }
+
+  .button {
+    height: 40px;
   }
 }

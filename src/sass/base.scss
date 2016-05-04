@@ -19,16 +19,6 @@ body {
   font-weight: 300;
 }
 
-button {
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-button, input {
-  font-weight: 300;
-  padding: 10px 15px;
-}
-
 h1 {
   color: $blackish;
   font-size: 2em;
@@ -41,6 +31,7 @@ input {
   color: $blackish;
   font-size: 16px;
   margin-bottom: 0.75em;
+  padding: 10px 15px;
 }
 
 nav {
