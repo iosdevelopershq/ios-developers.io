@@ -1,0 +1,42 @@
+.l-inside {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+#main-nav {
+  height: 44px;
+
+  ul {
+    text-align: right;
+
+    li {
+      display: inline-block;
+      height: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      a {
+        color: black;
+        font-size: 13px;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: #0069d8;
+        }
+
+        &.button {
+          border: solid 1px #0069d8;
+          border-radius: 3px;
+          color: #0069d8;
+          padding: 10px 20px;
+
+          &:hover {
+            color: white;
+            background-color: #0069d8;
+          }
+        }
+      }
+    }
+  }
+}
