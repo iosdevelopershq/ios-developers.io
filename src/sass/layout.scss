@@ -1,8 +1,36 @@
 $main-nav-height: 75px;
+$hover-transition: all 0.2s ease-in-out;
 
 .l-inside {
   padding-left: 4em;
   padding-right: 4em;
+}
+
+.button-bordered {
+  background-color: white;
+  border: solid 1px $blue;
+  color: $blue;
+
+  &:hover {
+    color: white !important;
+    background-color: $blue;
+  }
+}
+
+.button {
+  border-radius: 3px;
+  padding: 10px 20px;
+  transition: $hover-transition;
+}
+
+.button.button-solid {
+  background-color: $blue;
+  border: none;
+  color: white;
+
+  &:hover {
+    background-color: #005EC1;
+  }
 }
 
 #main-nav {
@@ -46,18 +74,6 @@ $main-nav-height: 75px;
         &:hover {
           color: #0069d8;
         }
-
-        &.button {
-          border: solid 1px #0069d8;
-          border-radius: 3px;
-          color: #0069d8;
-          padding: 10px 20px;
-
-          &:hover {
-            color: white;
-            background-color: #0069d8;
-          }
-        }
       }
     }
   }
@@ -65,10 +81,23 @@ $main-nav-height: 75px;
 
 #hero {
   padding-top: $main-nav-height * 2;
+  padding-bottom: $main-nav-height;
+  margin-bottom: 2.5em;
   text-align: center;
 
   h1 {
     margin: 0 auto 1em auto;
     width: 60%;
+  }
+
+  p {
+    line-height: 1.9em;
+    margin: 0 auto 2em auto;
+    width: 45%;
+  }
+
+  input {
+    margin-right: 1em;
+    width: 20%;
   }
 }

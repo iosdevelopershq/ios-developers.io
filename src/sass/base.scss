@@ -1,7 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
 $blackish: #4A4A4A;
+$blue: #0069D8;
 $grayish: #7e8890;
+
+a {
+  color: $grayish;
+  text-decoration: none;
+}
 
 body {
   color: $grayish;
@@ -9,18 +15,31 @@ body {
   font-weight: 300;
 }
 
-nav {
-  background: white;
-  font-weight: 400;
+button {
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
-a {
-  color: $grayish;
-  text-decoration: none;
+button, input {
+  font-weight: 300;
+  padding: 10px 15px;
 }
 
 h1 {
   color: $blackish;
   font-size: 2em;
   line-height: 1.35em;
+}
+
+input {
+  border: 1px solid #DEDEDE;
+  border-radius: 3px;
+  color: $blackish;
+  font-size: 16px;
+  margin-bottom: 0.75em;
+}
+
+nav {
+  background: white;
+  font-weight: 400;
 }
