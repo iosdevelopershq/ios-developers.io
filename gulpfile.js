@@ -2,7 +2,11 @@ const gulp = require('gulp')
 const hb = require('gulp-hb')
 const layouts = require('handlebars-layouts')
 
-gulp.task('default', ['handlebars'])
+gulp.task('default', ['build'], () => {
+  gulp.watch('./src/**/*', ['build'])
+})
+
+gulp.task('build', ['handlebars'])
 
 gulp.task('handlebars', () => {
   const hbStream = hb()

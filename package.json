@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "gulp",
+    "start": "gulp",
+    "build": "gulp build",
     "lint": "eslint ."
   },
   "devDependencies": {
