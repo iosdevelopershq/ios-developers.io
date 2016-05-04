@@ -53,15 +53,14 @@ $hover-transition: all 0.2s ease-in-out;
 
       &.logo-container {
         float: left;
-        height: $height;
-        width: $height;
         padding-top: ($main-nav-height - $height) / 2;
 
         .logo {
           background-image: url('../images/logo.png');
           background-size: contain;
           display: block;
-          height: 100%;
+          height: $height;
+          width: $height;
         }
       }
 
