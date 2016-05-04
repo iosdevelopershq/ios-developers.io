@@ -1,18 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
 $blackish: #4A4A4A;
+$grayish: #7e8890;
 
 body {
-  background: #F9F9F9;
-  color: $blackish;
+  color: $grayish;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 nav {
   background: white;
+  font-weight: 400;
 }
 
 a {
-  color: $blackish;
+  color: $grayish;
   text-decoration: none;
+}
+
+h1 {
+  color: $blackish;
+  font-size: 2em;
+  line-height: 1.35em;
 }

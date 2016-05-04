@@ -6,7 +6,9 @@
 #main-nav {
   $main-nav-height: 45px;
 
+  border-bottom: 1px solid #E4E4E4;
   height: $main-nav-height;
+  margin-bottom: $main-nav-height;
   padding-top: $main-nav-height / 3;
   padding-bottom: $main-nav-height / 3;
 
@@ -55,5 +57,14 @@
         }
       }
     }
+  }
+}
+
+#hero {
+  text-align: center;
+
+  h1 {
+    margin: 0 auto 1em auto;
+    width: 60%;
   }
 }
