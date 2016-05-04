@@ -1,16 +1,18 @@
+$main-nav-height: 75px;
+
 .l-inside {
   padding-left: 4em;
   padding-right: 4em;
 }
 
 #main-nav {
-  $main-nav-height: 45px;
+  $height:45px;
 
   border-bottom: 1px solid #E4E4E4;
   height: $main-nav-height;
-  margin-bottom: $main-nav-height;
-  padding-top: $main-nav-height / 3;
-  padding-bottom: $main-nav-height / 3;
+  padding: 0;
+  position: fixed;
+  width: 100%;
 
   ul {
     text-align: right;
@@ -23,8 +25,9 @@
 
       &.logo-container {
         float: left;
-        height: $main-nav-height;
-        width: $main-nav-height;
+        height: $height;
+        width: $height;
+        padding-top: ($main-nav-height - $height) / 2;
 
         .logo {
           background-image: url('../images/logo.png');
@@ -61,6 +64,7 @@
 }
 
 #hero {
+  padding-top: $main-nav-height * 2;
   text-align: center;
 
   h1 {
