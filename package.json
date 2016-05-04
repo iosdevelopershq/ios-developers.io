@@ -1,11 +1,15 @@
 {
   "private": true,
   "scripts": {
+    "build": "gulp",
     "lint": "eslint ."
   },
   "devDependencies": {
     "eslint": "^2.9.0",
     "eslint-config-airbnb-base": "^2.0.0",
-    "eslint-plugin-import": "^1.6.1"
+    "eslint-plugin-import": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-hb": "^5.1.0",
+    "handlebars-layouts": "^3.1.3"
   }
 }
