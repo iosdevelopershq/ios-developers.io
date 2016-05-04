@@ -8,7 +8,7 @@
 
 ### Deployment
 
-1. `npm run build && git subtree push --prefix dist origin gh-pages`
+1. `npm run deploy`
 
 ### Misc
 
