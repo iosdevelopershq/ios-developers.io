@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,23 +47,31 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #F9F9F9;
-  color: #4A4A4A;
-  font-family: 'Open Sans', sans-serif; }
+  color: #7e8890;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
 
 nav {
-  background: white; }
+  background: white;
+  font-weight: 400; }
 
 a {
-  color: #4A4A4A;
+  color: #7e8890;
   text-decoration: none; }
+
+h1 {
+  color: #4A4A4A;
+  font-size: 2em;
+  line-height: 1.35em; }
 
 .l-inside {
   padding-left: 4em;
   padding-right: 4em; }
 
 #main-nav {
+  border-bottom: 1px solid #E4E4E4;
   height: 45px;
+  margin-bottom: 45px;
   padding-top: 15px;
   padding-bottom: 15px; }
   #main-nav ul {
@@ -97,3 +105,9 @@ a {
           #main-nav ul li a.button:hover {
             color: white;
             background-color: #0069d8; }
+
+#hero {
+  text-align: center; }
+  #hero h1 {
+    margin: 0 auto 1em auto;
+    width: 60%; }
