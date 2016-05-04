@@ -58,7 +58,8 @@ a {
   padding-right: 4em; }
 
 #main-nav {
-  height: 45px; }
+  height: 45px;
+  margin-top: 22.5px; }
   #main-nav ul {
     text-align: right; }
     #main-nav ul li {
