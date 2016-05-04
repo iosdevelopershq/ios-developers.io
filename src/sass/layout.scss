@@ -4,7 +4,9 @@
 }
 
 #main-nav {
-  height: 44px;
+  $main-nav-height: 45px;
+
+  height: $main-nav-height;
 
   ul {
     text-align: right;
@@ -15,9 +17,23 @@
       padding-left: 15px;
       padding-right: 15px;
 
+      &.logo-container {
+        float: left;
+        height: $main-nav-height;
+        width: $main-nav-height;
+
+        .logo {
+          background-image: url('../images/logo.png');
+          background-size: contain;
+          display: block;
+          height: 100%;
+        }
+      }
+
       a {
         color: black;
         font-size: 13px;
+        line-height: $main-nav-height;
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
 
