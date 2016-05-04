@@ -46,27 +46,62 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a {
+  color: #7e8890;
+  text-decoration: none; }
+
 body {
   color: #7e8890;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
-nav {
-  background: white;
-  font-weight: 400; }
+button {
+  font-size: 13px;
+  text-transform: uppercase; }
 
-a {
-  color: #7e8890;
-  text-decoration: none; }
+button, input {
+  font-weight: 300;
+  padding: 10px 15px; }
 
 h1 {
   color: #4A4A4A;
   font-size: 2em;
   line-height: 1.35em; }
 
+input {
+  border: 1px solid #DEDEDE;
+  border-radius: 3px;
+  color: #4A4A4A;
+  font-size: 16px;
+  margin-bottom: 0.75em; }
+
+nav {
+  background: white;
+  font-weight: 400; }
+
 .l-inside {
   padding-left: 4em;
   padding-right: 4em; }
+
+.button-bordered {
+  background-color: white;
+  border: solid 1px #0069D8;
+  color: #0069D8; }
+  .button-bordered:hover {
+    color: white !important;
+    background-color: #0069D8; }
+
+.button {
+  border-radius: 3px;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out; }
+
+.button.button-solid {
+  background-color: #0069D8;
+  border: none;
+  color: white; }
+  .button.button-solid:hover {
+    background-color: #005EC1; }
 
 #main-nav {
   border-bottom: 1px solid #E4E4E4;
@@ -98,18 +133,19 @@ h1 {
         transition: all 0.2s ease-in-out; }
         #main-nav ul li a:hover {
           color: #0069d8; }
-        #main-nav ul li a.button {
-          border: solid 1px #0069d8;
-          border-radius: 3px;
-          color: #0069d8;
-          padding: 10px 20px; }
-          #main-nav ul li a.button:hover {
-            color: white;
-            background-color: #0069d8; }
 
 #hero {
   padding-top: 150px;
+  padding-bottom: 75px;
+  margin-bottom: 2.5em;
   text-align: center; }
   #hero h1 {
     margin: 0 auto 1em auto;
     width: 60%; }
+  #hero p {
+    line-height: 1.9em;
+    margin: 0 auto 2em auto;
+    width: 45%; }
+  #hero input {
+    margin-right: 1em;
+    width: 20%; }
