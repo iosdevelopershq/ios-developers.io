@@ -11,7 +11,7 @@ a {
   padding-right: 4em; }
 
 #main-nav {
-  height: 44px; }
+  height: 45px; }
   #main-nav ul {
     text-align: right; }
     #main-nav ul li {
@@ -19,9 +19,19 @@ a {
       height: 100%;
       padding-left: 15px;
       padding-right: 15px; }
+      #main-nav ul li.logo-container {
+        float: left;
+        height: 45px;
+        width: 45px; }
+        #main-nav ul li.logo-container .logo {
+          background-image: url("../images/logo.png");
+          background-size: contain;
+          display: block;
+          height: 100%; }
       #main-nav ul li a {
         color: black;
         font-size: 13px;
+        line-height: 45px;
         text-transform: uppercase;
         transition: all 0.2s ease-in-out; }
         #main-nav ul li a:hover {
