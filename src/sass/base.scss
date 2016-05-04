@@ -4,6 +4,10 @@ $blackish: #4A4A4A;
 $blue: #0069D8;
 $grayish: #7e8890;
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 a {
   color: $grayish;
   text-decoration: none;
