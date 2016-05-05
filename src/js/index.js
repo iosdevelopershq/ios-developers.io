@@ -1,4 +1,4 @@
-$('.down-arrow').click(function() {
+$('.down-arrow').click(() => {
   $('html, body').animate({
     scrollTop: $('#team').offset().top
   }, 500)

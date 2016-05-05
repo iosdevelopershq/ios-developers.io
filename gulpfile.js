@@ -1,3 +1,4 @@
+const babel = require('gulp-babel')
 const gulp = require('gulp')
 const hb = require('gulp-hb')
 const indexify = require('gulp-indexify')
@@ -31,6 +32,9 @@ gulp.task('images', () => {
 gulp.task('js', () => {
   return gulp
   .src('./src/js/**/*')
+  .pipe(babel({
+    presets: ['es2015']
+  }))
   .pipe(gulp.dest('./dist/js'))
 })
 

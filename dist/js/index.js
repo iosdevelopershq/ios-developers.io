@@ -1,5 +1,7 @@
-$('.down-arrow').click(function() {
+'use strict';
+
+$('.down-arrow').click(function () {
   $('html, body').animate({
     scrollTop: $('#team').offset().top
-  }, 500)
-})
+  }, 500);
+});
