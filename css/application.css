@@ -81,8 +81,16 @@ nav {
   font-weight: 400; }
 
 .l-inside {
-  padding-left: 4em;
-  padding-right: 4em; }
+  padding-left: 1.5em;
+  padding-right: 1.5em; }
+  @media (min-width: 544px) {
+    .l-inside {
+      padding-left: 2em;
+      padding-right: 2em; } }
+  @media (min-width: 768px) {
+    .l-inside {
+      padding-left: 4em;
+      padding-right: 4em; } }
 
 .button {
   border-radius: 3px;
@@ -149,24 +157,34 @@ nav {
           transition: all 0.2s ease-in-out; }
 
 #hero {
-  height: 100vh;
   margin-bottom: 2.5em;
   text-align: center; }
-  #hero .content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
+  @media (max-width: 543px) {
+    #hero {
+      padding-top: 112.5px; } }
+  @media (min-width: 544px) {
+    #hero {
+      height: 100vh; }
+      #hero .content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); } }
   #hero h1 {
-    margin: 0 auto 1em auto;
-    width: 60%; }
+    margin: 0 auto 1em auto; }
+    @media (min-width: 544px) {
+      #hero h1 {
+        width: 60%; } }
   #hero p {
     line-height: 1.9em;
-    margin: 0 auto 2em auto;
-    width: 45%; }
-  #hero input {
-    margin-right: 1em;
-    width: 20%; }
-  #hero .button {
+    margin: 0 auto 2em auto; }
+    @media (min-width: 544px) {
+      #hero p {
+        width: 45%; } }
+  @media (min-width: 544px) {
+    #hero form input {
+      margin-right: 1em;
+      width: 20%; } }
+  #hero form .button {
     height: 40px; }
   #hero .down-arrow {
     cursor: pointer;
@@ -174,14 +192,19 @@ nav {
     bottom: 8%;
     left: 50%;
     margin-left: -15px; }
+    @media (max-width: 543px) {
+      #hero .down-arrow {
+        display: none; } }
 
 #team {
-  height: 100vh;
   text-align: center; }
-  #team .content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
+  @media (min-width: 544px) {
+    #team {
+      height: 100vh; }
+      #team .content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); } }
   #team h2 {
     margin-bottom: 2em; }
   #team ul {
@@ -190,12 +213,12 @@ nav {
     box-sizing: border-box;
     float: left;
     width: 100%; }
-    @media (min-width: 34em) {
+    @media (min-width: 544px) {
       #team li {
         box-sizing: border-box;
         float: left;
         width: 50%; } }
-    @media (min-width: 48em) {
+    @media (min-width: 768px) {
       #team li {
         box-sizing: border-box;
         float: left;
