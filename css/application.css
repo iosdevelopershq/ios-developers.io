@@ -166,6 +166,7 @@ nav {
   #hero .button {
     height: 40px; }
   #hero .down-arrow {
+    cursor: pointer;
     position: absolute;
     bottom: 8%;
     left: 50%;
