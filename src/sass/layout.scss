@@ -75,37 +75,58 @@ $hover-transition: all 0.2s ease-in-out;
   width: 100%;
   z-index: 1;
 
-  ul {
+  .menu {
     text-align: right;
 
-    li {
-      display: inline-block;
-      height: 100%;
-      padding-left: 15px;
-      padding-right: 15px;
+    .logo-container {
+      float: left;
+      padding-top: ($main-nav-height - $height) / 2;
 
-      &.logo-container {
-        float: left;
-        padding-top: ($main-nav-height - $height) / 2;
-
-        .logo {
-          background-image: url('../images/logo.png');
-          background-size: contain;
-          display: block;
-          height: $height;
-          width: $height;
-        }
+      .logo {
+        background-image: url('../images/logo.png');
+        background-size: contain;
+        display: block;
+        height: $height;
+        width: $height;
       }
+    }
 
-      a {
+    &.mobile-menu-active {
+      li {
+        background-color: white;
+        display: block;
+      }
+    }
+
+    ul {
+      li {
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+        display: inline-block;
         font-size: 13px;
-        line-height: $main-nav-height;
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
         text-transform: uppercase;
 
-        &:hover {
-          color: #0069d8;
-          transition: $hover-transition;
+        a {
+          line-height: $main-nav-height;
+
+          &:hover {
+            color: #0069d8;
+            transition: $hover-transition;
+          }
         }
+      }
+    }
+
+    .mobile-menu-toggle {
+      line-height: $main-nav-height;
+      text-align: right;
+
+      @include media-breakpoint-up(md) {
+        display: none;
       }
     }
   }
