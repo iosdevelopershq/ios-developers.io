@@ -8,7 +8,7 @@ gulp.task('default', ['build'], () => {
   gulp.watch('./src/**/*', ['build'])
 })
 
-gulp.task('build', ['handlebars', 'images', 'sass'])
+gulp.task('build', ['handlebars', 'images', 'js', 'sass'])
 
 gulp.task('handlebars', () => {
   const hbStream = hb()
@@ -26,6 +26,12 @@ gulp.task('images', () => {
   return gulp
   .src('./src/images/**/*')
   .pipe(gulp.dest('./dist/images'))
+})
+
+gulp.task('js', () => {
+  return gulp
+  .src('./src/js/**/*')
+  .pipe(gulp.dest('./dist/js'))
 })
 
 gulp.task('sass', () => {
