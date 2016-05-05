@@ -58,10 +58,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
-h1 {
+h1, h2 {
   color: #4A4A4A;
-  font-size: 2em;
   line-height: 1.35em; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.6em; }
 
 input {
   border: 1px solid #DEDEDE;
@@ -149,3 +154,24 @@ nav {
     width: 20%; }
   #hero .button {
     height: 40px; }
+
+#team {
+  text-align: center; }
+  #team h2 {
+    margin-bottom: 2em; }
+  #team ul {
+    width: 100%; }
+  #team li {
+    display: inline-block;
+    width: 24%; }
+    #team li .profile-card {
+      margin-bottom: 3em; }
+      #team li .profile-card img {
+        border-radius: 50px;
+        margin-bottom: 1em;
+        height: 100px;
+        width: 100px; }
+      #team li .profile-card .name {
+        margin-bottom: .4em; }
+      #team li .profile-card .location {
+        font-size: .8em; }
