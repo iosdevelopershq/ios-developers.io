@@ -1,1 +1,1 @@
-"use strict";$(".down-arrow").click(function(){$("html, body").animate({scrollTop:$("#team").offset().top},500)});
+"use strict";function shuffle(o){var t=void 0,f=void 0,a=void 0;for(a=o.length;a;a-=1)t=Math.floor(Math.random()*a),f=o[a-1],o[a-1]=o[t],o[t]=f}$(".down-arrow").click(function(){$("html, body").animate({scrollTop:$("#team").offset().top},500)}),$("#team .row").each(function(o,t){var f=$(t).find("li");shuffle(f),$(t).html(f)});
