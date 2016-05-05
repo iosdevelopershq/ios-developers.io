@@ -1,0 +1,1 @@
+"use strict";$(".mobile-menu-toggle").click(function(){$(".menu").toggleClass("mobile-menu-active")});
