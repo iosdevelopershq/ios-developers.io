@@ -12,6 +12,7 @@
     "eslint-plugin-import": "^1.6.1",
     "gulp": "^3.9.1",
     "gulp-hb": "^5.1.0",
+    "gulp-indexify": "^0.1.1",
     "gulp-sass": "^2.3.1",
     "handlebars-layouts": "^3.1.3"
   }

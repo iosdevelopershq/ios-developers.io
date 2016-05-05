@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const hb = require('gulp-hb')
+const indexify = require('gulp-indexify')
 const layouts = require('handlebars-layouts')
 const sass = require('gulp-sass')
 
@@ -17,6 +18,7 @@ gulp.task('handlebars', () => {
   return gulp
   .src('./src/*.html')
   .pipe(hbStream)
+  .pipe(indexify())
   .pipe(gulp.dest('./dist'))
 })
 
