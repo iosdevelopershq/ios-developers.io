@@ -11,7 +11,10 @@ $hover-transition: all 0.2s ease-in-out;
   font-size: 13px;
   padding: 10px 20px;
   text-transform: uppercase;
-  transition: $hover-transition;
+
+  &:hover {
+    transition: $hover-transition;
+  }
 }
 
 .button-bordered {
@@ -70,10 +73,10 @@ $hover-transition: all 0.2s ease-in-out;
         font-size: 13px;
         line-height: $main-nav-height;
         text-transform: uppercase;
-        transition: all 0.2s ease-in-out;
 
         &:hover {
           color: #0069d8;
+          transition: $hover-transition;
         }
       }
     }
