@@ -107,6 +107,13 @@ nav {
   .button.button-solid:hover {
     background-color: #005EC1; }
 
+.down-arrow {
+  display: block;
+  background-image: url("../images/down.png");
+  background-size: contain;
+  width: 30px;
+  height: 16.28253px; }
+
 #main-nav {
   border-bottom: 1px solid #E4E4E4;
   height: 75px;
@@ -158,6 +165,11 @@ nav {
     width: 20%; }
   #hero .button {
     height: 40px; }
+  #hero .down-arrow {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -15px; }
 
 #team {
   height: 100vh;
