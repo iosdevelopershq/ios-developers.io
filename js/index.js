@@ -1,1 +1,1 @@
-"use strict";$(".down-arrow").click(function(){$("html, body").animate({scrollTop:$("#team").offset().top},500)});
+"use strict";$(".down-arrow").click(function(){$("html, body").animate({scrollTop:$("#team").offset().top},500)}),$(".mobile-menu-toggle").click(function(){$(".menu").toggleClass("mobile-menu-active")});

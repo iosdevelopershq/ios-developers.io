@@ -132,29 +132,41 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 1; }
-  #main-nav ul {
+  #main-nav .menu {
     text-align: right; }
-    #main-nav ul li {
+    #main-nav .menu .logo-container {
+      float: left;
+      padding-top: 15px; }
+      #main-nav .menu .logo-container .logo {
+        background-image: url("../images/logo.png");
+        background-size: contain;
+        display: block;
+        height: 45px;
+        width: 45px; }
+    #main-nav .menu.mobile-menu-active li {
+      background-color: white;
+      display: block; }
+    #main-nav .menu ul li {
       display: inline-block;
+      font-size: 13px;
       height: 100%;
       padding-left: 15px;
-      padding-right: 15px; }
-      #main-nav ul li.logo-container {
-        float: left;
-        padding-top: 15px; }
-        #main-nav ul li.logo-container .logo {
-          background-image: url("../images/logo.png");
-          background-size: contain;
-          display: block;
-          height: 45px;
-          width: 45px; }
-      #main-nav ul li a {
-        font-size: 13px;
-        line-height: 75px;
-        text-transform: uppercase; }
-        #main-nav ul li a:hover {
+      padding-right: 15px;
+      text-transform: uppercase; }
+      @media (max-width: 767px) {
+        #main-nav .menu ul li {
+          display: none; } }
+      #main-nav .menu ul li a {
+        line-height: 75px; }
+        #main-nav .menu ul li a:hover {
           color: #0069d8;
           transition: all 0.2s ease-in-out; }
+    #main-nav .menu .mobile-menu-toggle {
+      line-height: 75px;
+      text-align: right; }
+      @media (min-width: 768px) {
+        #main-nav .menu .mobile-menu-toggle {
+          display: none; } }
 
 #hero {
   margin-bottom: 2.5em;
