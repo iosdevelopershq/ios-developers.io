@@ -4,6 +4,7 @@ const hb = require('gulp-hb')
 const indexify = require('gulp-indexify')
 const layouts = require('handlebars-layouts')
 const sass = require('gulp-sass')
+const uglify = require('gulp-uglify')
 
 gulp.task('default', ['build'], () => {
   gulp.watch('./src/**/*', ['build'])
@@ -35,6 +36,7 @@ gulp.task('js', () => {
   .pipe(babel({
     presets: ['es2015']
   }))
+  .pipe(uglify())
   .pipe(gulp.dest('./dist/js'))
 })
 
