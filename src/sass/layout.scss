@@ -1,6 +1,12 @@
 $main-nav-height: 75px;
 $hover-transition: all 0.2s ease-in-out;
 
+@mixin vertical-align() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .l-inside {
   padding-left: 4em;
   padding-right: 4em;
@@ -46,6 +52,7 @@ $hover-transition: all 0.2s ease-in-out;
   padding: 0;
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   ul {
     text-align: right;
@@ -84,10 +91,13 @@ $hover-transition: all 0.2s ease-in-out;
 }
 
 #hero {
-  padding-top: $main-nav-height * 2;
-  padding-bottom: $main-nav-height;
+  height: 100vh;
   margin-bottom: 2.5em;
   text-align: center;
+
+  .content {
+    @include vertical-align();
+  }
 
   h1 {
     margin: 0 auto 1em auto;
@@ -111,7 +121,12 @@ $hover-transition: all 0.2s ease-in-out;
 }
 
 #team {
+  height: 100vh;
   text-align: center;
+
+  .content {
+    @include vertical-align();
+  }
 
   h2 {
     margin-bottom: 2em;
