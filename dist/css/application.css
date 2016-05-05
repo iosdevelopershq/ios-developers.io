@@ -58,6 +58,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
+footer {
+  font-size: 13px;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 2em; }
+
 h1, h2 {
   color: #4A4A4A;
   line-height: 1.35em; }
