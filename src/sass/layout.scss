@@ -9,8 +9,16 @@ $hover-transition: all 0.2s ease-in-out;
 }
 
 .l-inside {
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  @include media-breakpoint-up(sm) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  @include media-breakpoint-up(md) {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
 }
 
 .button {
@@ -104,35 +112,51 @@ $hover-transition: all 0.2s ease-in-out;
 }
 
 #hero {
-  height: 100vh;
+  @include media-breakpoint-down(sm) {
+    padding-top: $main-nav-height * 1.5;
+  }
   margin-bottom: 2.5em;
   text-align: center;
 
-  .content {
-    @include vertical-align();
+  @include media-breakpoint-up(sm) {
+    height: 100vh;
+    .content {
+      @include vertical-align();
+    }
   }
 
   h1 {
     margin: 0 auto 1em auto;
-    width: 60%;
+    @include media-breakpoint-up(sm) {
+      width: 60%;
+    }
   }
 
   p {
     line-height: 1.9em;
     margin: 0 auto 2em auto;
-    width: 45%;
+    @include media-breakpoint-up(sm) {
+      width: 45%;
+    }
   }
 
-  input {
-    margin-right: 1em;
-    width: 20%;
-  }
+  form {
+    input {
+      @include media-breakpoint-up(sm) {
+        margin-right: 1em;
+        width: 20%;
+      }
+    }
 
-  .button {
-    height: 40px;
+    .button {
+      height: 40px;
+    }
   }
 
   .down-arrow {
+    @include media-breakpoint-down(sm) {
+      display: none
+    }
     cursor: pointer;
     position: absolute;
     bottom: 8%;
@@ -142,11 +166,13 @@ $hover-transition: all 0.2s ease-in-out;
 }
 
 #team {
-  height: 100vh;
   text-align: center;
 
-  .content {
-    @include vertical-align();
+  @include media-breakpoint-up(sm) {
+    height: 100vh;
+    .content {
+      @include vertical-align();
+    }
   }
 
   h2 {

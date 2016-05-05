@@ -1,14 +1,23 @@
 // https://github.com/jamescmartinez/grid
 
 $breakpoints: (
-  sm: 34em,
-  md: 48em,
-  lg: 62em,
-  xl: 75em
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
 );
 
 @mixin clearfix() {
   overflow: auto;
+}
+
+@mixin media-breakpoint-down($name) {
+  $max: map-get($breakpoints, $name);
+  @if $max {
+    @media (max-width: $max - 1px) {
+      @content;
+    }
+  }
 }
 
 @mixin media-breakpoint-up($name) {
