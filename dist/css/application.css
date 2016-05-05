@@ -53,7 +53,7 @@ a {
   color: #7e8890;
   text-decoration: none; }
 
-body {
+body, input {
   color: #7e8890;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
@@ -203,7 +203,7 @@ nav {
       margin-right: 1em;
       width: 20%; } }
   #hero form .button {
-    height: 40px; }
+    height: 44px; }
   #hero .down-arrow {
     cursor: pointer;
     position: absolute;
