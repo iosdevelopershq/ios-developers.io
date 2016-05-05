@@ -53,6 +53,10 @@ $hover-transition: all 0.2s ease-in-out;
   height: $down-arrow-width * 146 / 269;
 }
 
+.row {
+  @include row();
+}
+
 #main-nav {
   $height:45px;
 
@@ -154,8 +158,13 @@ $hover-transition: all 0.2s ease-in-out;
   }
 
   li {
-    display: inline-block;
-    width: 24%; // TODO: Use columns
+    @include column(100%);
+    @include media-breakpoint-up(sm) {
+      @include column(50%);
+    }
+    @include media-breakpoint-up(md) {
+      @include column(25%)
+    }
 
     .profile-card {
       margin-bottom: 1em;

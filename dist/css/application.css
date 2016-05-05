@@ -114,6 +114,9 @@ nav {
   width: 30px;
   height: 16.28253px; }
 
+.row {
+  overflow: auto; }
+
 #main-nav {
   border-bottom: 1px solid #E4E4E4;
   height: 75px;
@@ -184,8 +187,19 @@ nav {
   #team ul {
     width: 100%; }
   #team li {
-    display: inline-block;
-    width: 24%; }
+    box-sizing: border-box;
+    float: left;
+    width: 100%; }
+    @media (min-width: 34em) {
+      #team li {
+        box-sizing: border-box;
+        float: left;
+        width: 50%; } }
+    @media (min-width: 48em) {
+      #team li {
+        box-sizing: border-box;
+        float: left;
+        width: 25%; } }
     #team li .profile-card {
       margin-bottom: 1em; }
       #team li .profile-card img {
