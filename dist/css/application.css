@@ -209,7 +209,8 @@ nav {
         display: none; } }
 
 #team {
-  text-align: center; }
+  text-align: center;
+  padding-top: 112.5px; }
   @media (min-width: 544px) {
     #team {
       height: 100vh; }

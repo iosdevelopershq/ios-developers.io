@@ -1,5 +1,6 @@
 $down-arrow-width: 30px;
 $main-nav-height: 75px;
+$top-padding: $main-nav-height * 1.5;
 $hover-transition: all 0.2s ease-in-out;
 
 @mixin vertical-align() {
@@ -134,7 +135,7 @@ $hover-transition: all 0.2s ease-in-out;
 
 #hero {
   @include media-breakpoint-down(sm) {
-    padding-top: $main-nav-height * 1.5;
+    padding-top: $top-padding;
   }
   margin-bottom: 2.5em;
   text-align: center;
@@ -188,6 +189,7 @@ $hover-transition: all 0.2s ease-in-out;
 
 #team {
   text-align: center;
+  padding-top: $top-padding;
 
   @include media-breakpoint-up(sm) {
     height: 100vh;
