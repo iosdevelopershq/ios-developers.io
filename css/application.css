@@ -112,7 +112,8 @@ nav {
   height: 75px;
   padding: 0;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   #main-nav ul {
     text-align: right; }
     #main-nav ul li {
@@ -138,10 +139,13 @@ nav {
           transition: all 0.2s ease-in-out; }
 
 #hero {
-  padding-top: 150px;
-  padding-bottom: 75px;
+  height: 100vh;
   margin-bottom: 2.5em;
   text-align: center; }
+  #hero .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
   #hero h1 {
     margin: 0 auto 1em auto;
     width: 60%; }
@@ -156,7 +160,12 @@ nav {
     height: 40px; }
 
 #team {
+  height: 100vh;
   text-align: center; }
+  #team .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
   #team h2 {
     margin-bottom: 2em; }
   #team ul {
