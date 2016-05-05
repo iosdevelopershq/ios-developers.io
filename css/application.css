@@ -83,8 +83,9 @@ nav {
   border-radius: 3px;
   font-size: 13px;
   padding: 10px 20px;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out; }
+  text-transform: uppercase; }
+  .button:hover {
+    transition: all 0.2s ease-in-out; }
 
 .button-bordered {
   background-color: white;
@@ -126,10 +127,10 @@ nav {
       #main-nav ul li a {
         font-size: 13px;
         line-height: 75px;
-        text-transform: uppercase;
-        transition: all 0.2s ease-in-out; }
+        text-transform: uppercase; }
         #main-nav ul li a:hover {
-          color: #0069d8; }
+          color: #0069d8;
+          transition: all 0.2s ease-in-out; }
 
 #hero {
   padding-top: 150px;
