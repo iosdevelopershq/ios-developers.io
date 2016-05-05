@@ -19,10 +19,17 @@ body {
   font-weight: 300;
 }
 
-h1 {
+h1, h2 {
   color: $blackish;
-  font-size: 2em;
   line-height: 1.35em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
 }
 
 input {

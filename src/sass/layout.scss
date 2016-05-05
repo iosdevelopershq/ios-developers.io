@@ -109,3 +109,39 @@ $hover-transition: all 0.2s ease-in-out;
     height: 40px;
   }
 }
+
+#team {
+  text-align: center;
+
+  h2 {
+    margin-bottom: 2em;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    width: 24%; // TODO: Use columns
+
+    .profile-card {
+      margin-bottom: 3em;
+
+      img {
+        border-radius: 50px;
+        margin-bottom: 1em;
+        height: 100px;
+        width: 100px;
+      }
+
+      .name {
+        margin-bottom: .4em;
+      }
+
+      .location {
+        font-size: .8em;
+      }
+    }
+  }
+}
