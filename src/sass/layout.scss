@@ -1,3 +1,4 @@
+$down-arrow-width: 30px;
 $main-nav-height: 75px;
 $hover-transition: all 0.2s ease-in-out;
 
@@ -42,6 +43,14 @@ $hover-transition: all 0.2s ease-in-out;
   &:hover {
     background-color: #005EC1;
   }
+}
+
+.down-arrow {
+  display: block;
+  background-image: url('../images/down.png');
+  background-size: contain;
+  width: $down-arrow-width;
+  height: $down-arrow-width * 146 / 269;
 }
 
 #main-nav {
@@ -117,6 +126,13 @@ $hover-transition: all 0.2s ease-in-out;
 
   .button {
     height: 40px;
+  }
+
+  .down-arrow {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -$down-arrow-width / 2;
   }
 }
 
