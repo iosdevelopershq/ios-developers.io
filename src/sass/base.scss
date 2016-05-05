@@ -46,6 +46,10 @@ input {
   font-size: 16px;
   margin-bottom: 0.75em;
   padding: 10px 15px;
+
+  &:not([type=checkbox]):not([type=radio]) {
+    -webkit-appearance: none;
+  }
 }
 
 nav {
