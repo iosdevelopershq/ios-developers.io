@@ -1,3 +1,7 @@
-$('.mobile-menu-toggle, .menu a').click(() => {
+$('.mobile-menu-toggle').click(() => {
   $('.menu').toggleClass('mobile-menu-active')
+})
+
+$('.menu a').click(() => {
+  $('.menu').removeClass('mobile-menu-active')
 })

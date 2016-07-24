@@ -1,1 +1,1 @@
-"use strict";$(".mobile-menu-toggle, .menu a").click(function(){$(".menu").toggleClass("mobile-menu-active")});
+"use strict";$(".mobile-menu-toggle").click(function(){$(".menu").toggleClass("mobile-menu-active")}),$(".menu a").click(function(){$(".menu").removeClass("mobile-menu-active")});
