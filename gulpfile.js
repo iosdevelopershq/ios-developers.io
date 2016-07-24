@@ -1,4 +1,5 @@
 const babel = require('gulp-babel')
+const cleanCSS = require('gulp-clean-css')
 const gulp = require('gulp')
 const hb = require('gulp-hb')
 const indexify = require('gulp-indexify')
@@ -44,5 +45,6 @@ gulp.task('sass', () => {
   return gulp
   .src('./src/sass/application.scss')
   .pipe(sass().on('error', sass.logError))
+  .pipe(cleanCSS())
   .pipe(gulp.dest('./dist/css'))
 })
