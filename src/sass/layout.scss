@@ -226,10 +226,15 @@ $hover-transition: all 0.2s ease-in-out;
       }
 
       .name {
-        margin-bottom: .4em;
+        margin-bottom: .6em;
       }
 
       .location {
+        font-size: .8em;
+        margin-bottom: .8em
+      }
+
+      .username {
         font-size: .8em;
       }
     }
