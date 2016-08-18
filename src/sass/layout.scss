@@ -240,3 +240,42 @@ $hover-transition: all 0.2s ease-in-out;
     }
   }
 }
+
+#coc {
+  margin: auto;
+  max-width: 800px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  ul {
+    list-style: circle;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  p {
+    line-height: 25px;
+    margin: 20px 0;
+  }
+
+  li {
+    line-height: 25px;
+    margin: 10px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  a {
+    color: #0069D8;
+    text-decoration: underline;
+  }
+}
