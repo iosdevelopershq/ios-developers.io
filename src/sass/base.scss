@@ -26,7 +26,7 @@ footer {
   padding-bottom: 2em;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: $blackish;
   line-height: 1.35em;
 }
@@ -37,6 +37,11 @@ h1 {
 
 h2 {
   font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 input {
@@ -55,4 +60,8 @@ input {
 nav {
   background: white;
   font-weight: 400;
+}
+
+strong {
+  font-weight: bold;
 }
