@@ -162,7 +162,18 @@ $hover-transition: all 0.2s ease-in-out;
     }
   }
 
+  #coc-notice {
+    font-style: italic;
+    font-size: 12px;
+
+    a {
+      color: #0069D8;
+    }
+  }
+
   form {
+    margin-bottom: 10px;
+
     input {
       @include media-breakpoint-up(sm) {
         margin-right: 1em;
