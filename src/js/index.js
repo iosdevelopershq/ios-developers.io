@@ -17,7 +17,7 @@ function shuffle(a) {
   }
 }
 
-$('#team .row').each((i, e) => {
+$('#team ul').each((i, e) => {
   const cards = ($(e).find('li'))
   shuffle(cards)
   $(e).html(cards)

@@ -203,6 +203,7 @@ $hover-transition: all 0.2s ease-in-out;
   }
 
   ul {
+    @include row();
     width: 100%;
   }
 
