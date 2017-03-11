@@ -31,26 +31,35 @@ $hover-transition: all 0.2s ease-in-out;
   &:hover {
     transition: $hover-transition;
   }
-}
 
-.button-bordered {
-  background-color: white;
-  border: solid 1px $blue;
-  color: $blue;
+  &.button-bordered {
+    background-color: white;
+    border: solid 1px $blue;
+    color: $blue;
 
-  &:hover {
-    color: white !important;
-    background-color: $blue;
+    &:hover {
+      color: white !important;
+      background-color: $blue;
+    }
+
+    &.button-secondary {
+      border-color: $orange;
+      color: $orange;
+
+      &:hover {
+        background-color: $orange;
+      }
+    }
   }
-}
 
-.button.button-solid {
-  background-color: $blue;
-  border: none;
-  color: white;
+  &.button-solid {
+    background-color: $blue;
+    border: none;
+    color: white;
 
-  &:hover {
-    background-color: #005EC1;
+    &:hover {
+      background-color: #005EC1;
+    }
   }
 }
 
