@@ -4,7 +4,7 @@
 
 1. `npm install`
 1. `npm start`
-1.  `cd dist && python -mSimpleHTTPServer`
+1.  `cd dist && python -m http.server`
 
 ### Deployment
 
