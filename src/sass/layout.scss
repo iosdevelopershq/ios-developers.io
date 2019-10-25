@@ -171,27 +171,17 @@ $hover-transition: all 0.2s ease-in-out;
     }
   }
 
+  .button {
+    font-size: 15px;
+    padding: 10px 50px;
+  }
+
   #coc-notice {
     font-style: italic;
     font-size: 12px;
 
     a {
       color: #0069D8;
-    }
-  }
-
-  form {
-    margin-bottom: 10px;
-
-    input {
-      @include media-breakpoint-up(sm) {
-        margin-right: 1em;
-        width: 20%;
-      }
-    }
-
-    .button {
-      height: 44px;
     }
   }
 

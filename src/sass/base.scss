@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-body, input {
+body {
   color: $grayish;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -43,19 +43,6 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: bold;
-}
-
-input {
-  border: 1px solid #DEDEDE;
-  border-radius: 3px;
-  color: $blackish;
-  font-size: 16px;
-  margin-bottom: 0.75em;
-  padding: 10px 15px;
-
-  &:not([type=checkbox]):not([type=radio]) {
-    -webkit-appearance: none;
-  }
 }
 
 nav {
